@@ -1,13 +1,144 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* HERO */
+.hero-container {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  display: flex;
+}
+
+.hero-container img {
+  width: 100%;
+  position: fixed;
+}
+
+.hero-context {
+  position: absolute;
+  top: 250px;
+  left: 350px;
+  width: 750px;
+}
+
+.hero-context h1 {
+  font-size: 100px;
+  color: rgb(29, 29, 61);
+}
+
+.hero-context p {
+  font-size: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(69, 69, 97);
+  letter-spacing: 1px;
+}
+
+.hero-context button {
+  padding: 8px 18px;
+  border: none;
+  background-color: rgb(48, 47, 47);
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.phone {
+  position: absolute;
+  top: 200px;
+  left: 1100px;
+}
+
+.phone img {
+  width: 400px;
+  height: 500px;
+}
+
+/* NAVBAR */
+.navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.menu {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: white;
+}
+
+.sign-in button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(48, 47, 47);
+  color: white;
+  font-size: 16px;
+  
+}
+
+/* SUBMENU */
+.submenu-container {
+  width: auto;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  visibility: hidden;
+  padding: 20px 0 10px 40px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.42);
+}
+
+.show-submenu {
+  visibility: visible;
+}
+
+.submenu-details h3 {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgb(59, 56, 56);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links li {
+  list-style: none;
+  padding: 20px 20px 0 0;
+  min-width: 140px;
+}
+
+.links span {
+  margin-right: 15px;
+  color: rgb(56, 118, 121);
+}
+
+.links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(36, 34, 34);
 }
